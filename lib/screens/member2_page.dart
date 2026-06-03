@@ -22,7 +22,7 @@ class Member2Page extends StatelessWidget {
             children: [
               CircleAvatar(
                 radius: 70,
-                backgroundImage: AssetImage('assets/images/image2.jpg'),
+                backgroundImage: AssetImage('assets/images/image5.jpeg'),
               ),
               SizedBox(height: 20,),
 
@@ -34,7 +34,7 @@ class Member2Page extends StatelessWidget {
                 ),
               ),
               Text(
-                  'Reg-No : 2024-FU-CS-38'
+                  'Reg-No : 2024-FU-CS-37'
               ),
               Text('Semester : 4th'),
               Text('GPA : 3.78'),

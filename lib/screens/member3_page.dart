@@ -21,7 +21,7 @@ class Member3Page extends StatelessWidget {
             children: [
               CircleAvatar(
                 radius: 70,
-                backgroundImage: AssetImage('assets/images/image4.jpg'),
+                backgroundImage: AssetImage('assets/images/image7.jpeg'),
               ),
               SizedBox(height: 20,),
 
