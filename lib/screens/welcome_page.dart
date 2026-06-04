@@ -11,41 +11,51 @@ class WelcomePage extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.indigo.shade100,
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                Icons.school,
-                size: 100,
-                color: Colors.indigo,
-              ),
-              SizedBox(height: 20,),
-              Text(
-                "WelCome To Our App",
-                style: TextStyle(
-                  fontSize: 28,
-                  fontWeight: FontWeight.bold,
+        body: Container(
+          width: double.infinity,
+          height: double.infinity,
+          decoration: BoxDecoration(
+            image: DecorationImage(image: AssetImage('assets/images/fata_university_logo.jpg',),
+            fit: BoxFit.cover,
+              opacity: 0.15,
+            ),
+          ),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.school,
+                  size: 100,
+                  color: Colors.indigo,
                 ),
-              ),
-              SizedBox(height: 30,),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.indigo
+                SizedBox(height: 20,),
+                Text(
+                  "WelCome To Our App",
+                  style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
+                SizedBox(height: 30,),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.indigo
+                  ),
 
-                  onPressed: (){
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder:
-                      (context) => Member1Page(),
+                    onPressed: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder:
+                        (context) => Member1Page(),
 
-                      ),
-                    );
-                  },
-                  child: Text("Next",style: TextStyle(color: Colors.white),)),
+                        ),
+                      );
+                    },
+                    child: Text("Next",style: TextStyle(color: Colors.white),)),
 
-            ],
+              ],
+            ),
           ),
         ),
 
