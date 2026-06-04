@@ -46,12 +46,18 @@ class Member2Page extends StatelessWidget {
 
                 children: [
                   ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.indigo
+                    ),
                     onPressed: (){
                       Navigator.pop(context);
                     },
-                    child: Text("Previous"),
+                    child: Text("Previous",style: TextStyle(color: Colors.white),),
                   ),
                   ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.indigo
+                      ),
                       onPressed: (){
                         Navigator.push(context,
                           MaterialPageRoute(builder:
@@ -59,7 +65,7 @@ class Member2Page extends StatelessWidget {
                           ),
                         );
                       },
-                      child: Text('Next')
+                      child: Text('Next',style: TextStyle(color: Colors.white),)
                   )
                 ],
               )

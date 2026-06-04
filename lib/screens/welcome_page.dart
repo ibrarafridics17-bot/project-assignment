@@ -30,6 +30,10 @@ class WelcomePage extends StatelessWidget {
               ),
               SizedBox(height: 30,),
               ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.indigo
+                ),
+
                   onPressed: (){
                     Navigator.push(
                       context,
@@ -39,7 +43,7 @@ class WelcomePage extends StatelessWidget {
                       ),
                     );
                   },
-                  child: Text("Next")),
+                  child: Text("Next",style: TextStyle(color: Colors.white),)),
 
             ],
           ),

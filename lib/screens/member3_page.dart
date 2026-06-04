@@ -44,19 +44,25 @@ class Member3Page extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.indigo
+                    ),
                     onPressed: (){
                       Navigator.pop(context);
                     },
-                    child: Text("Previous"),
+                    child: Text("Previous",style: TextStyle(color: Colors.white),),
                   ),
                   ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.indigo
+                    ),
                       onPressed: () {
                         Navigator.popUntil(
                           context,
                               (route) => route.isFirst,
                         );
                       },
-                      child: Text('Finished'),
+                      child: Text('Finished',style: TextStyle(color: Colors.white),),
                   ),
                 ],
 
