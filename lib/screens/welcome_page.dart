@@ -17,7 +17,7 @@ class WelcomePage extends StatelessWidget {
           decoration: BoxDecoration(
             image: DecorationImage(image: AssetImage('assets/images/fata_university_logo.jpg',),
             fit: BoxFit.contain,
-              opacity: 0.1,
+              opacity: 0.10,
             ),
           ),
           child: Center(
