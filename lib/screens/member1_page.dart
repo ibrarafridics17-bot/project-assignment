@@ -37,6 +37,7 @@ class Member1Page extends StatelessWidget {
                 'Reg-No : 2024-FU-CS-33'
               ),
               Text('Semester : 4th'),
+              Text('Section A'),
               Text('GPA : 3.85'),
               
               SizedBox(height: 30,),
