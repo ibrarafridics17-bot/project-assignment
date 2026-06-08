@@ -7,55 +7,58 @@ class WelcomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        backgroundColor: Colors.indigo.shade100,
-        body: Container(
-          width: double.infinity,
-          height: double.infinity,
-          decoration: BoxDecoration(
-            image: DecorationImage(image: AssetImage('assets/images/fata_university_logo.jpg',),
-            fit: BoxFit.contain,
-              opacity: 0.10,
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+          backgroundColor: Colors.indigo.shade100,
+          body: Container(
+            width: double.infinity,
+            height: double.infinity,
+            decoration: BoxDecoration(
+              image: DecorationImage(image: AssetImage('assets/images/fata_university_logo.jpg',),
+              fit: BoxFit.contain,
+                opacity: 0.10,
+              ),
             ),
-          ),
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  Icons.school,
-                  size: 100,
-                  color: Colors.indigo,
-                ),
-                SizedBox(height: 20,),
-                Text(
-                  "WelCome To Our App",
-                  style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.school,
+                    size: 100,
+                    color: Colors.indigo,
                   ),
-                ),
-                SizedBox(height: 30,),
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.indigo
+                  SizedBox(height: 20,),
+                  Text(
+                    "WelCome To Our App",
+                    style: TextStyle(
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
+                  SizedBox(height: 30,),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.indigo
+                    ),
 
-                    onPressed: (){
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder:
-                        (context) => Member1Page(),
+                      onPressed: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder:
+                          (context) => Member1Page(),
 
-                        ),
-                      );
-                    },
-                    child: Text("Next",style: TextStyle(color: Colors.white),)),
+                          ),
+                        );
+                      },
+                      child: Text("Next",style: TextStyle(color: Colors.white),)),
 
-              ],
+                ],
+              ),
             ),
           ),
         ),
-      );
+    );
   }
 }
