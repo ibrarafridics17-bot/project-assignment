@@ -7,9 +7,7 @@ class WelcomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return Scaffold(
         backgroundColor: Colors.indigo.shade100,
         body: Container(
           width: double.infinity,
@@ -58,8 +56,6 @@ class WelcomePage extends StatelessWidget {
             ),
           ),
         ),
-
-      ),
-    );
+      );
   }
 }
